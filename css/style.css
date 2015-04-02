@@ -8,6 +8,10 @@ body {
     margin: 0 auto;
 }
 
+.contact {
+    display: none;
+}
+
 nav, .navbar {
     border-bottom: 1px solid #ececed;
 }
@@ -243,5 +247,21 @@ select, #keyword {
         position: absolute;
         bottom: 20px;
         right: 20px;
+    }
+
+    .contact {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 765px){
+    .top-navigation-ul, .navbarCollapse {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    #navbarUncollapsed {
+        display: none;
     }
 }
