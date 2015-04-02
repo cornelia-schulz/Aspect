@@ -8,6 +8,10 @@ body {
     margin: 0 auto;
 }
 
+.contact {
+    display: none;
+}
+
 nav, .navbar {
     border-bottom: 1px solid #ececed;
 }
@@ -29,6 +33,23 @@ header, nav {
     color: #000000;
 }
 
+#navbarCollapse {
+    padding: 0;
+    padding-left: 20px;
+    width: 80px;
+    float: right;
+}
+
+.navbar-nav li a {
+    padding: 0px 10px 0px 10px;
+}
+
+.navbar-nav li a:hover {
+    background-color: #ffffff;
+    color: #757779;
+    text-decoration: none;
+}
+
 .navigation-ul li {
     color: #000000;
     font-weight: bold;
@@ -38,11 +59,7 @@ header, nav {
 
 .navigation-ul {
     list-style-type: none;
-}
-
-.navigation-ul li {
-    display: inline;
-    padding-left: 20px;
+    float: right;
 }
 
 .navigation-ul a, .navigation-ul a:visited {
@@ -50,9 +67,8 @@ header, nav {
     color: #000000;
 }
 
-.navigation-ul a:hover {
-    color: #757779;
-    text-decoration: none;
+.icon-bar {
+    background-color: #757779;
 }
 
 aside {
@@ -97,6 +113,11 @@ aside {
     margin-left: 20px;
     padding-right: 10px;
     line-height: 25px;
+}
+
+aside, article {
+    padding-bottom: 10px;
+    margin: 0 auto;
 }
 
 .left-article-header {
@@ -155,8 +176,18 @@ aside {
     font-weight: normal;
 }
 
-select, #keyword {
+#keyword {
     width: 70%;
+}
+
+select {
+    width: 70%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 5px;
+    background-color: #ffffff;
+    background: url(../images/triangles.png) 96%  no-repeat;
 }
 
 #keyword {
@@ -207,6 +238,8 @@ select, #keyword {
     background-color: #ececed;
     clear: both;
     margin-top: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .row {
@@ -215,7 +248,7 @@ select, #keyword {
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
     .nav-row {
         position: relative;
     }
@@ -234,5 +267,21 @@ select, #keyword {
         position: absolute;
         bottom: 20px;
         right: 20px;
+    }
+
+    .contact {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 765px){
+    .top-navigation-ul, .navbarCollapse {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    #navbarUncollapsed {
+        display: none;
     }
 }
