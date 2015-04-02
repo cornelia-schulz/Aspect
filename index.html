@@ -25,8 +25,8 @@
                 </div>
             </div>
         </header>
-        <nav class="navbar row">
-            <div class="row nav-row">
+        <nav class="navbar row" role="navigation">
+            <div class="row ">
                 <div class="col-md-6 header-text">
                     <p>
                         <span class="head-intro">
@@ -35,14 +35,23 @@
                         Our role is to source talented individuals with sought-after technical skills and experience for permanent job opportunities within New Zealand's FMCG and high-speed manufacturing/continuous process industries.
                     </p>
                 </div>
-                <div class="col-md-6 menu bottom-align">
-                    <ul class="navigation-ul">
-                        <li><a href="http://www.aspect.net.nz">Home</a></li>
-                        <li><a href="http://www.aspect.net.nz/about">About Us</a></li>
-                        <li><a href="http://www.aspect.net.nz/applicants">Applicants</a></li>
-                        <li><a href="http://www.aspect.net.nz/resources">Resources</a></li>
-                        <li><a href="http://www.aspect.net.nz/contact">Contact Us</a></li>
-                    </ul>
+                <div class="col-md-6 menu bottom-align nav-row">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div id="navbarCollapse" class="collapse navbar-collapse">
+                        <ul class="navigation-ul nav navbar-nav">
+                            <li class="active"><a href="http://www.aspect.net.nz">Home</a></li>
+                            <li><a href="http://www.aspect.net.nz/about">About Us</a></li>
+                            <li><a href="http://www.aspect.net.nz/applicants">Applicants</a></li>
+                            <li><a href="http://www.aspect.net.nz/resources">Resources</a></li>
+                            <li><a href="http://www.aspect.net.nz/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>

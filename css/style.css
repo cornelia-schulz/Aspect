@@ -29,6 +29,20 @@ header, nav {
     color: #000000;
 }
 
+#navbarCollapse {
+    padding: 0;
+}
+
+.navbar-nav li a {
+    padding: 0px 10px 0px 10px;
+}
+
+.navbar-nav li a:hover {
+    background-color: #ffffff;
+    color: #757779;
+    text-decoration: none;
+}
+
 .navigation-ul li {
     color: #000000;
     font-weight: bold;
@@ -38,11 +52,7 @@ header, nav {
 
 .navigation-ul {
     list-style-type: none;
-}
-
-.navigation-ul li {
-    display: inline;
-    padding-left: 20px;
+    float: right;
 }
 
 .navigation-ul a, .navigation-ul a:visited {
@@ -50,9 +60,8 @@ header, nav {
     color: #000000;
 }
 
-.navigation-ul a:hover {
-    color: #757779;
-    text-decoration: none;
+.icon-bar {
+    background-color: #757779;
 }
 
 aside {
@@ -215,7 +224,7 @@ select, #keyword {
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
     .nav-row {
         position: relative;
     }
