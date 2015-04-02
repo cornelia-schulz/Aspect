@@ -36,7 +36,7 @@ header, nav {
 #navbarCollapse {
     padding: 0;
     padding-left: 20px;
-    width: 80px;
+    width: 90px;
     float: right;
 }
 
@@ -248,7 +248,7 @@ select {
 }
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     .nav-row {
         position: relative;
     }
