@@ -35,6 +35,7 @@ header, nav {
 
 #navbarCollapse {
     padding: 0;
+    float: right;
 }
 
 .navbar-nav li a {
